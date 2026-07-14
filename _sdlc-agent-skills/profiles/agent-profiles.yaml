@@ -1,0 +1,50 @@
+---
+# Agent profiles for KiloCode runtime.
+# Runtime should read these values and inject temperature/steps into agent config before starting a session.
+# Explicit temperature/steps in .kilo/agent/*.md override profile values.
+
+coding:
+  description: "Strict coding, architecture, and infrastructure tasks. Low creativity, high precision."
+  temperature: 0.2
+  steps: 3
+  agents:
+    - sdlc-coder
+    - sdlc-devops
+    - sdlc-data
+
+creative:
+  description: "Creative and business-oriented tasks requiring variability and idea generation."
+  temperature: 0.7
+  steps: 5
+  agents:
+    - sdlc-marketer
+    - sdlc-designer
+
+business:
+  description: "Business analysis, requirements, and process optimization."
+  temperature: 0.7
+  steps: 5
+  agents:
+    - sdlc-business
+
+qa:
+  description: "Quality assurance and testing. Systematic approach with exploratory elements."
+  temperature: 0.4
+  steps: 5
+  agents:
+    - sdlc-tester
+
+security:
+  description: "Security-focused tasks. Minimal hallucinations, strict standards compliance."
+  temperature: 0.1
+  steps: 3
+  agents:
+    - sdlc-security
+
+coordination:
+  description: "Coordination, planning, and analytical tasks. Balance between structure and adaptability."
+  temperature: 0.3
+  steps: 5
+  agents:
+    - sdlc-project-manager
+    - sdlc-system-analyst

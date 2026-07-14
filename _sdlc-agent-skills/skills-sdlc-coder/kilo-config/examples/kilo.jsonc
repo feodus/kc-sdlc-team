@@ -1,0 +1,107 @@
+// kilo.jsonc — Пример конфигурации KiloCode
+// Раскомментируй нужные секции
+
+{
+  "$schema": "https://app.kilo.ai/config.json",
+
+  // ============================================
+  // AGENTS — Кастомные агенты
+  // ============================================
+  // "agent": {
+  //   // Python разработчик
+  //   "python-dev": {
+  //     "description": "Python разработчик с экспертизой в FastAPI",
+  //     "mode": "primary",
+  //     "color": "#3776AB",
+  //     "skills": ["python-project-setup", "fastapi-development"],
+  //     "permission": {
+  //       "edit": { "*.py": "allow", "src/**": "allow", "*": "deny" },
+  //       "bash": "allow",
+  //       "read": "allow",
+  //       "glob": "allow",
+  //       "grep": "allow"
+  //     }
+  //   },
+  //   
+  //   // Code reviewer (только чтение)
+  //   "code-reviewer": {
+  //     "description": "Агент для code review",
+  //     "mode": "primary",
+  //     "color": "#10B981",
+  //     "permission": {
+  //       "read": "allow",
+  //       "glob": "allow",
+  //       "grep": "allow",
+  //       "edit": "deny",
+  //       "write": "deny",
+  //       "bash": "deny"
+  //     }
+  //   },
+  //   
+  //   // Subagent для документации
+  //   "docs-writer": {
+  //     "description": "Писатель документации",
+  //     "mode": "subagent",
+  //     "permission": {
+  //       "edit": { "*.md": "allow", "docs/**": "allow" },
+  //       "read": "allow",
+  //       "glob": "allow"
+  //     }
+  //   }
+  // },
+
+  // ============================================
+  // INSTRUCTIONS — Правила
+  // ============================================
+  // "instructions": [
+  //   ".kilo/rules/formatting.md",
+  //   ".kilo/rules/naming-conventions.md",
+  //   ".kilo/rules/security.md"
+  // ],
+
+  // ============================================
+  // SKILLS — Пути к навыкам
+  // ============================================
+  // "skills": {
+  //   "paths": [
+  //     "./_sdlc-agent-skills/skills-sdlc-coder/",
+  //     "./.kilo/skills/"
+  //   ],
+  //   "urls": [
+  //     "https://example.com/skills/custom-skill/SKILL.md"
+  //   ]
+  // },
+
+  // ============================================
+  // MCP — Model Context Protocol серверы
+  // ============================================
+  // "mcp": {
+  //   "servers": {
+  //     "context7": {
+  //       "command": "npx",
+  //       "args": ["-y", "@context7/mcp-server"]
+  //     }
+  //   }
+  // },
+
+  // ============================================
+  // PROVIDER — Провайдеры и модели
+  // ============================================
+  // "provider": {
+  //   "default": "anthropic",
+  //   "models": {
+  //     "claude-sonnet-4-20250514": {
+  //       "provider": "anthropic",
+  //       "temperature": 0.7
+  //     }
+  //   }
+  // },
+
+  // ============================================
+  // AUTO-APPROVE — Авто-подтверждение
+  // ============================================
+  // "autoApprove": {
+  //   "enabled": false,
+  //   "commands": ["npm test", "pip install *"]
+  // }
+}

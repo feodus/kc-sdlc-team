@@ -1,0 +1,18 @@
+{
+  "$schema": "https://app.kilo.ai/config.json",
+  "skills": {
+    "paths": [
+      "./_sdlc-agent-skills/skills-sdlc-coder/",
+      "./_sdlc-agent-skills/skills-sdlc-business/",
+      "./_sdlc-agent-skills/skills-sdlc-data/",
+      "./_sdlc-agent-skills/skills-sdlc-designer/",
+      "./_sdlc-agent-skills/skills-sdlc-devops/",
+      "./_sdlc-agent-skills/skills-sdlc-marketer/",
+      "./_sdlc-agent-skills/skills-sdlc-project-manager/",
+      "./_sdlc-agent-skills/skills-sdlc-security/",
+      "./_sdlc-agent-skills/skills-sdlc-system-analyst/",
+      "./_sdlc-agent-skills/skills-sdlc-tester/"
+    ]
+  },
+  "snapshot": false
+}
